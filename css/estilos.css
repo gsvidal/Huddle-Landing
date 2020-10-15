@@ -1,37 +1,4 @@
- /* # Front-end Style Guide
 
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
-
-## Colors
-
-### Primary
-
-- Violet: hsl(257, 40%, 49%)
-
-## Typography
-
-### Headings
-
-- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
-- Weights: 400, 700
-
-### Body
-
-- Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
-- Weights: 400
-
-## Icons
-
-For the social icons, you can use a font icon library. Some suggestions can be found below:
-
-- [Font Awesome](https://fontawesome.com/)
-- [IcoMoon](https://icomoon.io/)
-- [Ionicons](https://ionicons.com/)  */
 @font-face {
   font-family: 'icomoon';
   src:  url('../fonts/icomoon.eot?o6h2ye');
@@ -75,7 +42,8 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 400;
   height:800px;
-  margin:0;
+  max-width: 1440px;
+  margin:0 auto;
 }
 
 .logo {
@@ -89,17 +57,15 @@ justify-content: flex-start;
 .fondo img {
 width: 1290px;
 height:inherit; 
-/* object-fit: cover; */
 position: fixed;
 top:0;
 left:0;
 z-index: -1 ;
-/* background-image: url('../images/bg-desktop.svg'); */
+
 }
 .fondo-m img {
   display:none;
 }
-
 
 h1 {
 font-family: 'Poppins', sans-serif;
@@ -120,16 +86,11 @@ border-radius: 20px;
 -moz-box-shadow: 6px 5px 14px -1px rgba(0,0,0,0.75);
 box-shadow: 6px 5px 14px -1px rgba(0,0,0,0.75);
 margin-top: 20px;
-/* position: relative; */
-/* background-color: white; */
+
 }
-/* .hero {
-  width:auto;
-} */
+
 .container {
 width: auto;
-/* margin: 70px; */
-/* margin-top: 35px; */
 display:flex;
 justify-content:space-around;
 
@@ -169,109 +130,108 @@ line-height: 40px;
 }
 
 
-@media screen and (max-width: 1440px) 
+@media screen and (max-width: 1270px) 
 {
 
+  body {
+    width: 70vw;
+    min-width: 560px;
+    margin: 0 auto;
+  }
+  .logo {
+    margin-left: 30px;
+    margin-top: 30px;
+    margin-bottom: 0px;
+   }
+   .logo img {
+     width: 47.5%;
+     margin-bottom: 20px;
+   }
+   .fondo {
+     margin:0;
+   }
+   .fondo img {
+     display:none;
+           
+   }
+   .fondo-m img {
+     display:block;
+     width: 375px;
+     position: fixed;
+     top:0px;
+     left:0px;
+     z-index: -1 ;
+   }
+ 
+   .container {
+     margin: 0 auto;
+     width: 100%;
+     /* margin: 70px; */
+     /* margin-top: 35px; */
+     display:block;
+     text-align:center;
+     }
+   .container img {
+     width:82%;
+     margin-left: 9%;
+     margin-right: 9%;
+ 
+     margin-top: 20px;
+   }
+     .Huddle-info {
+       /* margin: 0 10px 0 10px; */
+       padding: 60px;
+       padding-top: 43.75px;
+ 
+       width: auto;
+       margin:0;
+       text-align:center;
+       /* margin-left:0; */
+       /* margin-right:7%; */
+       }
+   h1 {
+     font-size: 24px;
+     margin: 0;
+     font-weight: 700;
+   }
+   p {
+     font-size: 16px;
+   }
+   button {
+     /* Le damos un width inicial y fijo de 200px pero cuando se achica la pantalla el width se convierte en un 100% de su contenedor y empieza a modificar su tamaño. */
+     max-width:100%;
+     width:200px;
+     height:40px;
+   }
 
+   .footer {
+     width: 100vw;
+     
+   }
+ .social {
+   margin-bottom: 50px;
+  display: flex;
+  justify-content: center; 
+  position: static;
+ 
+ }
+ 
+    .social i {
+     font-size: 12px;
+     width: 30px;
+     height:30px;
+     border: 1px solid white ;
+     line-height: 35px;
+}
 
 }
 
 @media screen and (max-width: 375px) 
 {
-  .logo {
-   margin-left: 30px;
-   margin-top: 30px;
-   margin-bottom: 0px;
-  }
-  .logo img {
-    width: 47.5%;
-    margin-bottom: 20px;
-  }
-  .fondo {
-    margin:0;
-  }
-  .fondo img {
-    display:none;
-    /* z-index: -2; */
-          
-  }
-  .fondo-m img {
-    display:block;
-    width: 375px;
-    /* height:inherit;  */
-    /* object-fit: cover; */
-    /* margin:0; */
-    position: fixed;
-    
-    top:0px;
-    left:0px;
-    z-index: -1 ;
-  }
+  body {
+    width: 100vw;
 
-  .container {
-    width: auto;
-    /* margin: 70px; */
-    /* margin-top: 35px; */
-    display:block;
-    text-align:center;
-    }
-  .container img {
-    width:82%;
-    margin-left: 9%;
-    margin-right: 9%;
-
-    margin-top: 20px;
   }
-    .Huddle-info {
-      /* margin: 0 10px 0 10px; */
-      padding: 33.75px;
-      padding-top: 43.75px;
-
-      width: auto;
-      margin:0;
-      text-align:center;
-      /* margin-left:0; */
-      /* margin-right:7%; */
-      }
-  h1 {
-    font-size: 24px;
-    margin: 0;
-    font-weight: 700;
-  }
-  p {
-    font-size: 16px;
-  }
-  button {
-    /* Le damos un width inicial y fijo de 200px pero cuando se achica la pantalla el width se convierte en un 100% de su contenedor y empieza a modificar su tamaño. */
-    max-width:100%;
-    width:200px;
-    height:40px;
-  }
-.social {
-display: flex;
-justify-content: center; 
-position: static;
-/* width:100%; */
-/* top: 710px;
-right:110px; */
-/* margin-top: 5px; */
-/* text-align: center;   */
-
-}
-
-
-
-  .social i {
-    font-size: 12px;
-    /* margin: 10px; */
-    width: 30px;
-    height:30px;
-    border: 1px solid white ;
-    /* border-radius:50%;
-    text-align: center; */
-    line-height: 35px;
-    
-    }
 }
 
 
