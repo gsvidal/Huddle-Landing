@@ -133,10 +133,18 @@ line-height: 40px;
 @media screen and (max-width: 1270px) 
 {
 
+  /* html {
+    width: 100vw;
+  } */
   body {
     width: 70vw;
     min-width: 560px;
-    margin: 0 auto;
+    margin: 0 auto;    
+    height: 100vh;
+    background-image: url("../images/bg-mobile.svg");
+    background-size: 150%;
+    background-repeat: no-repeat;
+    background-position: top  left;
   }
   .logo {
     margin-left: 30px;
@@ -154,14 +162,15 @@ line-height: 40px;
      display:none;
            
    }
-   .fondo-m img {
+   /* .fondo-m img {
      display:block;
-     width: 375px;
+     width: 100vw;
+     height: 100vh;
      position: fixed;
      top:0px;
      left:0px;
      z-index: -1 ;
-   }
+   } */
  
    .container {
      margin: 0 auto;
@@ -228,10 +237,10 @@ line-height: 40px;
 
 @media screen and (max-width: 375px) 
 {
-  body {
+  /* body {
     width: 100vw;
 
-  }
+  } */
 }
 
 
